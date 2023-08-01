@@ -47,21 +47,18 @@ body {
   justify-content: space-around;
   align-items: center;
   position: fixed;
-  width: 400px;
-  height: 50px;
   margin-bottom: 2px;
   padding: 5px;
   border-radius: 16px;
-  width: 375px;
-  height: 76px;
-  bottom: 0px;
+  width: 100mm;
+  height: 20mm;
+  bottom: 0mm;
 
 }
 
 .icon {
   height: 32px;
   width: 32px;
-
 }
 .sicon {
   height: 32px;
@@ -70,7 +67,7 @@ body {
 }
 
 .roundBtnAct {
-  height: 56px;
+  height:15mm;
   width: 56px;
   display: block;
   border-radius: 50%;
@@ -100,11 +97,16 @@ body {
   flex-direction: column;
   align-items: center;
 }
-
-.cock{
+.hor_container-left {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.movie_btn{
+  width: 150px;
+  height: 180px;
+  top: 197px;
+  border-radius: 16px;
 }
 .search_input
 {
