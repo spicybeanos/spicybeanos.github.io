@@ -26,6 +26,7 @@ body {
   top: 81px;
   border-radius: 16px;
 }
+
 .text-red {
   font-family: sans-serif;
   color: #D8464F;
@@ -53,7 +54,6 @@ body {
   width: 100mm;
   height: 20mm;
   bottom: 0mm;
-
 }
 
 .icon {
