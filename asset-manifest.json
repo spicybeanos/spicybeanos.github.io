@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/spicybeanos.github.io/static/css/main.e6c13ad2.css",
+    "main.js": "/spicybeanos.github.io/static/js/main.49e54ea1.js",
+    "static/js/787.a86f3764.chunk.js": "/spicybeanos.github.io/static/js/787.a86f3764.chunk.js",
+    "index.html": "/spicybeanos.github.io/index.html",
+    "main.e6c13ad2.css.map": "/spicybeanos.github.io/static/css/main.e6c13ad2.css.map",
+    "main.49e54ea1.js.map": "/spicybeanos.github.io/static/js/main.49e54ea1.js.map",
+    "787.a86f3764.chunk.js.map": "/spicybeanos.github.io/static/js/787.a86f3764.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.49e54ea1.js"
+  ]
+}
