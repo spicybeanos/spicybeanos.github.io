@@ -1,0 +1,391 @@
+
+<html>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js'></script>
+    <style>
+        body{
+            font-family: 'Poppins';
+            font-size: 22px;
+            color: #edf982;
+            padding: 2%;
+            background-color: rgb(37, 37, 37);
+        }
+        .msgcont{
+            border-radius: 5px;
+            background-color: rgb(72, 72, 72);
+            padding: 2%;
+            width: max-content;
+            margin: 2%;
+        }
+        .usr{
+            color: rgb(121, 121, 248);
+        }
+        .rxn{
+            background-color: rgb(92, 94, 114);
+            width: max-content;
+            border-radius: 5px;
+            padding: 3%;
+            margin: 2%;
+        }
+        li{
+            color: aliceblue;
+        }
+        .txt{
+            color: aliceblue;
+        }
+    </style>
+    <body><h1>Chat with 9/11 Flight Cadets wrapped</h1>
+<div class='txt'>by Aryan D</div>
+<h3>Who sent how many messeges</h3><canvas id="WHOSENTHOWMANYMESSEGES" style="width:100%;max-width:600px"></canvas>
+
+<ul>
+	<li>siddhant_jagati:955</li>
+	<li>Hemɘnth Nichil:416</li>
+	<li>Adrian DS:999</li>
+	<li>nived:415</li>
+	<li>Subhrajyoti:634</li>
+	<li>Aditya Induraj:170</li>
+	<li>Rahul Saravanan:275</li>
+	<li>Aryan D:553</li>
+	<li>Gaurav.:2</li>
+	<li>Rishil Chaturvedi:96</li>
+	<li>Avirral Singh:78</li>
+	<li>Aarush D Nair:4</li>
+</ul>
+<h3>What kind of messages were sent</h3><canvas id="WHATKINDOFMESSAGESWERESENT" style="width:100%;max-width:600px"></canvas>
+
+<ul>
+	<li>ReelShare:2253</li>
+	<li>PostShare:523</li>
+	<li>Content:1752</li>
+	<li>PhotoShare:25</li>
+	<li>Empty:30</li>
+	<li>UrlShare:8</li>
+	<li>VideoShare:4</li>
+	<li>StoryReply:3</li>
+</ul>
+<h3>Most popular reactions:</h3><canvas id="MOSTPOPULARREACTIONS:" style="width:100%;max-width:600px"></canvas>
+
+<h3>Top 20 most reacted messages:</h3>
+<ol>
+	<li><div class="msgcont">
+	<div class="usr">Hemɘnth Nichil</div>
+	<div>https://www.instagram.com/reel/Czvne9-yXm4/?id=3237980309052553656_51491573622</div>
+	<div class="rxn">6❤️</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">Rishil Chaturvedi</div>
+	<div>You should like</div>
+	<div class="rxn">6❤️</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">Aditya Induraj</div>
+	<div>https://www.instagram.com/reel/CyqD2HZNo4K/?id=3218401796640116234_52104820903</div>
+	<div class="rxn">5❤️</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">Adrian DS</div>
+	<div>>#,#&@,×,×>@&@?+(#8',bUn2j1wisnnsnzusjamqnegdukn*#,#&@8?</div>
+	<div class="rxn">1❤</div>
+	<div class="rxn">4❤️</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">Aditya Induraj</div>
+	<div>https://www.instagram.com/reel/CuhMQ8_AKvK/?id=3143847956432595914_10659072281</div>
+	<div class="rxn">5❤️</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">Aditya Induraj</div>
+	<div>https://www.instagram.com/reel/Cuu-S3zoqkT/?id=3147727165334923539_42418635817</div>
+	<div class="rxn">1❤</div>
+	<div class="rxn">4❤️</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">Hemɘnth Nichil</div>
+	<div>https://www.instagram.com/p/C0y1YJTA3Z4/?id=3256900236257490552_2114661805</div>
+	<div class="rxn">5❤️</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">Adrian DS</div>
+	<div>https://www.instagram.com/reel/Ct9f3Z_gjZF/?id=3133801062641841733_8648209691</div>
+	<div class="rxn">5❤️</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">Aryan D</div>
+	<div>https://www.instagram.com/p/CzXtZHxIo0b/</div>
+	<div class="rxn">5❤️</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">Subhrajyoti</div>
+	<div></div>
+	<div class="rxn">5❤️</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">Hemɘnth Nichil</div>
+	<div>I will miss me 10 seconds ago when I did not read this</div>
+	<div class="rxn">5❤️</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">nived</div>
+	<div>https://www.instagram.com/p/Ct2QmzaS7y7/</div>
+	<div class="rxn">5❤️</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">Hemɘnth Nichil</div>
+	<div>https://www.instagram.com/reel/CucKNscNNx3/?id=3142431561533938807_50407439230</div>
+	<div class="rxn">5❤️</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">Subhrajyoti</div>
+	<div>https://www.instagram.com/p/CzVBMVpL7dl/</div>
+	<div class="rxn">1❤</div>
+	<div class="rxn">3❤️</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">Subhrajyoti</div>
+	<div>https://www.instagram.com/reel/Ct_dF0jPwM8/?id=3134351809045267260_21944069118</div>
+	<div class="rxn">4❤️</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">Subhrajyoti</div>
+	<div>https://www.instagram.com/p/CxoEGU7M2K7/</div>
+	<div class="rxn">3❤️</div>
+	<div class="rxn">1❤</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">Hemɘnth Nichil</div>
+	<div>https://www.instagram.com/reel/CuN_n-UA5qi/?id=3138444339244669602_10201671536</div>
+	<div class="rxn">4❤️</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">siddhant_jagati</div>
+	<div>https://www.instagram.com/reel/Cwe7lWYo8k4/?id=3179240438370650424_48618901370</div>
+	<div class="rxn">4❤️</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">Subhrajyoti</div>
+	<div>https://www.instagram.com/reel/CuHOpDqLu7d/?id=3136540059565485789_54188301538</div>
+	<div class="rxn">2😂</div>
+	<div class="rxn">2❤️</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">Aryan D</div>
+	<div>https://www.instagram.com/p/CzjRMW0hCdq/</div>
+	<div class="rxn">4❤️</div>
+</div></li>
+</ol>
+<h3>most commonly used words</h3><canvas id="TOP50MOSTCOMMONLYUSEDWORDS" style="width:100%;max-width:600px"></canvas>
+
+<ol>
+	<li>real:29</li>
+	<li>why:20</li>
+	<li>💀:18</li>
+	<li>fr:17</li>
+	<li>fucking:17</li>
+	<li>damn:16</li>
+	<li>think:16</li>
+	<li>man:16</li>
+	<li>yea:15</li>
+	<li>tho:14</li>
+	<li>mfw:13</li>
+	<li>too:13</li>
+	<li>rishil:13</li>
+	<li>after:13</li>
+	<li>am:12</li>
+	<li>actually:11</li>
+	<li>that's:11</li>
+	<li>adrian:11</li>
+	<li>😭:11</li>
+	<li>guy:11</li>
+	<li>very:10</li>
+	<li>oh:10</li>
+	<li>?:10</li>
+	<li>lmao:10</li>
+	<li>fuck:9</li>
+	<li>also:9</li>
+	<li>reels:9</li>
+	<li>where:9</li>
+	<li>ok:9</li>
+	<li>does:9</li>
+	<li>lol:9</li>
+	<li>wtf:8</li>
+	<li>tf:8</li>
+	<li>thing:8</li>
+	<li>ye:8</li>
+	<li>same:7</li>
+	<li>nah:7</li>
+	<li>reel:7</li>
+	<li>af:7</li>
+	<li>smash:7</li>
+	<li>should:7</li>
+	<li>post:7</li>
+	<li>new:7</li>
+	<li>👍:7</li>
+	<li>right:7</li>
+	<li>&:7</li>
+	<li>shit:7</li>
+	<li>thought:7</li>
+	<li>bruh:7</li>
+	<li>never:7</li>
+	<li>sent:6</li>
+</ol></body><script>
+  const xValues0 = ["siddhant_jagati" ,"Hemɘnth Nichil" ,"Adrian DS" ,"nived" ,"Subhrajyoti" ,"Aditya Induraj" ,"Rahul Saravanan" ,"Aryan D" ,"Gaurav." ,"Rishil Chaturvedi" ,"Avirral Singh" ,"Aarush D Nair" ,];
+  const yValues0 = [955 ,416 ,999 ,415 ,634 ,170 ,275 ,553 ,2 ,96 ,78 ,4 ,];
+  const barColors0 = [
+    "#FF0000" ,
+"#00FF00" ,
+"#0000FF" ,
+"#FFFF00" ,
+"#FF00FF" ,
+"#00FFFF" ,
+"#000000" ,
+"#800000" ,
+"#008000" ,
+"#000080" ,
+"#808000" ,
+"#800080" ,
+
+  ];
+
+  new Chart('WHOSENTHOWMANYMESSEGES', {
+    type: 'pie',
+    data: {
+      labels: xValues0,
+      datasets: [{
+        backgroundColor: barColors0,
+        data: yValues0
+      }]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'Who sent how many messeges'
+      }
+    }
+  });
+</script><script>
+  const xValues1 = ["ReelShare" ,"PostShare" ,"Content" ,"PhotoShare" ,"Empty" ,"UrlShare" ,"VideoShare" ,"StoryReply" ,];
+  const yValues1 = [2253 ,523 ,1752 ,25 ,30 ,8 ,4 ,3 ,];
+  const barColors1 = [
+    "#FF0000" ,
+"#00FF00" ,
+"#0000FF" ,
+"#FFFF00" ,
+"#FF00FF" ,
+"#00FFFF" ,
+"#000000" ,
+"#800000" ,
+
+  ];
+
+  new Chart('WHATKINDOFMESSAGESWERESENT', {
+    type: 'pie',
+    data: {
+      labels: xValues1,
+      datasets: [{
+        backgroundColor: barColors1,
+        data: yValues1
+      }]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'What kind of messages were sent'
+      }
+    }
+  });
+</script><script>
+  const xValues2 = ["❤️" ,"💀" ,"❤" ,"😂" ,"👍" ,"🗿" ,"😭" ,"😐" ,"😨" ,"☠️" ,"💯" ,"🔥" ,"😡" ,"🖕" ,"😢" ,"😟" ,"😋" ,"✌️" ,"🇮🇷" ,"🐉" ,"🧠" ,"✈️" ,"🙏" ,"🧞‍♀️" ,"🐵" ,"🤯" ,"⭕" ,"😞" ,"🙃" ,"😮" ,"💜" ,"🖤" ,"😑" ,"🇵🇰" ,"😶" ,"➕" ,];
+  const yValues2 = [3651 ,116 ,108 ,55 ,42 ,39 ,23 ,6 ,5 ,5 ,4 ,3 ,3 ,3 ,3 ,3 ,2 ,2 ,2 ,2 ,2 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,];
+  const barColors2 = [
+    "#FF0000" ,
+"#00FF00" ,
+"#0000FF" ,
+"#FFFF00" ,
+"#FF00FF" ,
+"#00FFFF" ,
+"#000000" ,
+"#800000" ,
+"#008000" ,
+"#000080" ,
+"#808000" ,
+"#800080" ,
+"#008080" ,
+"#808080" ,
+"#C00000" ,
+"#00C000" ,
+"#0000C0" ,
+"#C0C000" ,
+"#C000C0" ,
+"#00C0C0" ,
+"#C0C0C0" ,
+"#400000" ,
+"#004000" ,
+"#000040" ,
+"#404000" ,
+"#400040" ,
+"#004040" ,
+"#404040" ,
+"#200000" ,
+"#002000" ,
+"#000020" ,
+"#202000" ,
+"#200020" ,
+"#002020" ,
+"#202020" ,
+"#600000" ,
+
+  ];
+
+  new Chart('MOSTPOPULARREACTIONS:', {
+    type: 'pie',
+    data: {
+      labels: xValues2,
+      datasets: [{
+        backgroundColor: barColors2,
+        data: yValues2
+      }]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'Most popular reactions:'
+      }
+    }
+  });
+</script><script>
+  const xValues3 = ["real" ,"why" ,"💀" ,"fr" ,"fucking" ,"damn" ,"think" ,"man" ,"yea" ,"tho" ,"mfw" ,];
+  const yValues3 = [29 ,20 ,18 ,17 ,17 ,16 ,16 ,16 ,15 ,14 ,13 ,];
+  const barColors3 = [
+    "#FF0000" ,
+"#00FF00" ,
+"#0000FF" ,
+"#FFFF00" ,
+"#FF00FF" ,
+"#00FFFF" ,
+"#000000" ,
+"#800000" ,
+"#008000" ,
+"#000080" ,
+"#808000" ,
+
+  ];
+
+  new Chart('TOP50MOSTCOMMONLYUSEDWORDS', {
+    type: 'pie',
+    data: {
+      labels: xValues3,
+      datasets: [{
+        backgroundColor: barColors3,
+        data: yValues3
+      }]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'Top 50 most commonly used words'
+      }
+    }
+  });
+</script>
+</html>

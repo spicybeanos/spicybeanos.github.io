@@ -1,0 +1,244 @@
+
+<html>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js'></script>
+    <style>
+        body{
+            font-family: 'Poppins';
+            font-size: 22px;
+            color: #edf982;
+            padding: 2%;
+            background-color: rgb(37, 37, 37);
+        }
+        .msgcont{
+            border-radius: 5px;
+            background-color: rgb(72, 72, 72);
+            padding: 2%;
+            width: max-content;
+            margin: 2%;
+        }
+        .usr{
+            color: rgb(121, 121, 248);
+        }
+        .rxn{
+            background-color: rgb(92, 94, 114);
+            width: max-content;
+            border-radius: 5px;
+            padding: 3%;
+            margin: 2%;
+        }
+        li{
+            color: aliceblue;
+        }
+        .txt{
+            color: aliceblue;
+        }
+    </style>
+    <body><h1>Chat with Pankaj Mirchandani wrapped</h1>
+<div class='txt'>by Aryan D</div>
+<h3>Who sent how many messeges</h3><canvas id="WHOSENTHOWMANYMESSEGES" style="width:100%;max-width:600px"></canvas>
+
+<ul>
+	<li>Pankaj Mirchandani:1367</li>
+	<li>Aryan D:772</li>
+</ul>
+<h3>What kind of messages were sent</h3><canvas id="WHATKINDOFMESSAGESWERESENT" style="width:100%;max-width:600px"></canvas>
+
+<ul>
+	<li>Content:1515</li>
+	<li>ReelShare:438</li>
+	<li>PostShare:89</li>
+	<li>PhotoShare:2</li>
+	<li>AudioShare:1</li>
+	<li>StoryReply:82</li>
+	<li>UrlShare:5</li>
+	<li>Empty:7</li>
+	<li>VideoShare:2</li>
+</ul>
+<h3>Most popular reactions:</h3><canvas id="MOSTPOPULARREACTIONS:" style="width:100%;max-width:600px"></canvas>
+
+<h3>most commonly used words</h3><canvas id="TOP50MOSTCOMMONLYUSEDWORDS" style="width:100%;max-width:600px"></canvas>
+
+<ol>
+	<li>😂:70</li>
+	<li>💀:61</li>
+	<li>kya:36</li>
+	<li>🗿:27</li>
+	<li>bhi:26</li>
+	<li>ye:22</li>
+	<li>se:22</li>
+	<li>kal:19</li>
+	<li>wo:19</li>
+	<li>bhai:19</li>
+	<li>🤣:19</li>
+	<li>rha:18</li>
+	<li>aa:18</li>
+	<li>haan:18</li>
+	<li>😮:15</li>
+	<li>gya:15</li>
+	<li>bruh:15</li>
+	<li>ek:15</li>
+	<li>thoda:14</li>
+	<li>kuch:14</li>
+	<li>aaj:13</li>
+	<li>ok:13</li>
+	<li>ki:13</li>
+	<li>nai:11</li>
+	<li>tu:11</li>
+	<li>bas:11</li>
+	<li>kiya:11</li>
+	<li>push:11</li>
+	<li>ahh:11</li>
+	<li>ya:10</li>
+	<li>dekh:10</li>
+	<li>sab:10</li>
+	<li>i'll:10</li>
+	<li>nahh:10</li>
+	<li>crush:10</li>
+	<li>arre:9</li>
+	<li>hua:9</li>
+	<li>lmaooo:9</li>
+	<li>?:9</li>
+	<li>accha:9</li>
+	<li>hota:9</li>
+	<li>oye:9</li>
+	<li>bc:9</li>
+	<li>same:9</li>
+	<li>abhi:8</li>
+	<li>💀💀💀:8</li>
+	<li>usko:8</li>
+	<li>hoga:8</li>
+	<li>log:8</li>
+	<li>😭:8</li>
+	<li>uske:8</li>
+</ol></body><script>
+  const xValues0 = ["Pankaj Mirchandani" ,"Aryan D" ,];
+  const yValues0 = [1367 ,772 ,];
+  const barColors0 = [
+    "#FF0000" ,
+"#00FF00" ,
+
+  ];
+
+  new Chart('WHOSENTHOWMANYMESSEGES', {
+    type: 'pie',
+    data: {
+      labels: xValues0,
+      datasets: [{
+        backgroundColor: barColors0,
+        data: yValues0
+      }]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'Who sent how many messeges'
+      }
+    }
+  });
+</script><script>
+  const xValues1 = ["Content" ,"ReelShare" ,"PostShare" ,"PhotoShare" ,"AudioShare" ,"StoryReply" ,"UrlShare" ,"Empty" ,"VideoShare" ,];
+  const yValues1 = [1515 ,438 ,89 ,2 ,1 ,82 ,5 ,7 ,2 ,];
+  const barColors1 = [
+    "#FF0000" ,
+"#00FF00" ,
+"#0000FF" ,
+"#FFFF00" ,
+"#FF00FF" ,
+"#00FFFF" ,
+"#000000" ,
+"#800000" ,
+"#008000" ,
+
+  ];
+
+  new Chart('WHATKINDOFMESSAGESWERESENT', {
+    type: 'pie',
+    data: {
+      labels: xValues1,
+      datasets: [{
+        backgroundColor: barColors1,
+        data: yValues1
+      }]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'What kind of messages were sent'
+      }
+    }
+  });
+</script><script>
+  const xValues2 = ["❤️" ,"😂" ,"💀" ,"👍" ,"❤" ,"🗿" ,"😮" ,"🤣" ,"😭" ,"😶" ,"😆" ,"🐸" ,"🥰" ,"🐷" ,"🤔" ,];
+  const yValues2 = [179 ,148 ,71 ,63 ,58 ,28 ,28 ,11 ,5 ,4 ,4 ,1 ,1 ,1 ,1 ,];
+  const barColors2 = [
+    "#FF0000" ,
+"#00FF00" ,
+"#0000FF" ,
+"#FFFF00" ,
+"#FF00FF" ,
+"#00FFFF" ,
+"#000000" ,
+"#800000" ,
+"#008000" ,
+"#000080" ,
+"#808000" ,
+"#800080" ,
+"#008080" ,
+"#808080" ,
+"#C00000" ,
+
+  ];
+
+  new Chart('MOSTPOPULARREACTIONS:', {
+    type: 'pie',
+    data: {
+      labels: xValues2,
+      datasets: [{
+        backgroundColor: barColors2,
+        data: yValues2
+      }]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'Most popular reactions:'
+      }
+    }
+  });
+</script><script>
+  const xValues3 = ["😂" ,"💀" ,"kya" ,"🗿" ,"bhi" ,"ye" ,"se" ,"kal" ,"wo" ,"bhai" ,"🤣" ,];
+  const yValues3 = [70 ,61 ,36 ,27 ,26 ,22 ,22 ,19 ,19 ,19 ,19 ,];
+  const barColors3 = [
+    "#FF0000" ,
+"#00FF00" ,
+"#0000FF" ,
+"#FFFF00" ,
+"#FF00FF" ,
+"#00FFFF" ,
+"#000000" ,
+"#800000" ,
+"#008000" ,
+"#000080" ,
+"#808000" ,
+
+  ];
+
+  new Chart('TOP50MOSTCOMMONLYUSEDWORDS', {
+    type: 'pie',
+    data: {
+      labels: xValues3,
+      datasets: [{
+        backgroundColor: barColors3,
+        data: yValues3
+      }]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'Top 50 most commonly used words'
+      }
+    }
+  });
+</script>
+</html>

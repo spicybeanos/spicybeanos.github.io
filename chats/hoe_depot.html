@@ -1,0 +1,409 @@
+
+<html>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js'></script>
+    <style>
+        body{
+            font-family: 'Poppins';
+            font-size: 22px;
+            color: #edf982;
+            padding: 2%;
+            background-color: rgb(37, 37, 37);
+        }
+        .msgcont{
+            border-radius: 5px;
+            background-color: rgb(72, 72, 72);
+            padding: 2%;
+            width: max-content;
+            margin: 2%;
+        }
+        .usr{
+            color: rgb(121, 121, 248);
+        }
+        .rxn{
+            background-color: rgb(92, 94, 114);
+            width: max-content;
+            border-radius: 5px;
+            padding: 3%;
+            margin: 2%;
+        }
+        li{
+            color: aliceblue;
+        }
+        .txt{
+            color: aliceblue;
+        }
+    </style>
+    <body><h1>Chat with Hoe Depot wrapped</h1>
+<div class='txt'>by Aryan D</div>
+<h3>Who sent how many messeges</h3><canvas id="WHOSENTHOWMANYMESSEGES" style="width:100%;max-width:600px"></canvas>
+
+<ul>
+	<li>Alisha:5449</li>
+	<li>Tejaswi 🙂🔪:7326</li>
+	<li>Aryan D:8705</li>
+	<li>PH:8869</li>
+	<li>Vaaruni Sharma:1287</li>
+	<li>Suha:1897</li>
+	<li>Pankaj Mirchandani:768</li>
+	<li>Kai:13056</li>
+</ul>
+<h3>What kind of messages were sent</h3><canvas id="WHATKINDOFMESSAGESWERESENT" style="width:100%;max-width:600px"></canvas>
+
+<ul>
+	<li>Content:37724</li>
+	<li>Like:4936</li>
+	<li>ReelShare:5099</li>
+	<li>PostShare:5755</li>
+	<li>PhotoShare:1324</li>
+	<li>VideoShare:181</li>
+	<li>UrlShare:355</li>
+	<li>AudioShare:59</li>
+	<li>Empty:232</li>
+</ul>
+<h3>Most popular reactions:</h3><canvas id="MOSTPOPULARREACTIONS:" style="width:100%;max-width:600px"></canvas>
+
+<h3>Top 20 most reacted messages:</h3>
+<ol>
+	<li><div class="msgcont">
+	<div class="usr">Kai</div>
+	<div>I just saw 5 'Yogesh' water trucks in a row</div>
+	<div class="rxn">5❤️</div>
+	<div class="rxn">1😭</div>
+	<div class="rxn">1🧡</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">Kai</div>
+	<div>I got into University of Bath!!</div>
+	<div class="rxn">6❤️</div>
+	<div class="rxn">1🧡</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">Kai</div>
+	<div>Y'all, I think I might've topped English in my class</div>
+	<div class="rxn">4❤️</div>
+	<div class="rxn">1💙</div>
+	<div class="rxn">1🧡</div>
+	<div class="rxn">1👍</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">Alisha</div>
+	<div>https://www.instagram.com/p/CnBi35cMoxM/</div>
+	<div class="rxn">6❤️</div>
+	<div class="rxn">1🧡</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">PH</div>
+	<div>Finally got a group pic with my close friends here</div>
+	<div class="rxn">7❤️</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">Tejaswi 🙂🔪</div>
+	<div>MY EXAMS R OVERRRRR</div>
+	<div class="rxn">4❤️</div>
+	<div class="rxn">1💙</div>
+	<div class="rxn">1👍</div>
+	<div class="rxn">1🧡</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">Kai</div>
+	<div>I just wrote the year as 2019 in a date column</div>
+	<div class="rxn">3❤️</div>
+	<div class="rxn">1😂</div>
+	<div class="rxn">1🧡</div>
+	<div class="rxn">1💛</div>
+	<div class="rxn">1👍</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">PH</div>
+	<div>I got into one of the Purdue campuses with a $3k a year scholarship</div>
+	<div class="rxn">7❤️</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">Alisha</div>
+	<div>New style of animation is actually unnecessary</div>
+	<div class="rxn">4❤️</div>
+	<div class="rxn">1💙</div>
+	<div class="rxn">1🧡</div>
+	<div class="rxn">1👍</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">Kai</div>
+	<div>Thank you for your sacrifice</div>
+	<div class="rxn">4❤️</div>
+	<div class="rxn">1💙</div>
+	<div class="rxn">1👍</div>
+	<div class="rxn">1🧡</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">Aryan D</div>
+	<div></div>
+	<div class="rxn">6❤️</div>
+	<div class="rxn">1🧡</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">Vaaruni Sharma</div>
+	<div>my mom has discovered instagram motivational posts.</div>
+	<div class="rxn">3❤️</div>
+	<div class="rxn">1🧡</div>
+	<div class="rxn">1🤠</div>
+	<div class="rxn">1💀</div>
+	<div class="rxn">1😂</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">Tejaswi 🙂🔪</div>
+	<div>I got best presenter for a marketing competition</div>
+	<div class="rxn">6❤️</div>
+	<div class="rxn">1🧡</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">Vaaruni Sharma</div>
+	<div>bro is in 6th grade making emo edits</div>
+	<div class="rxn">4❤️</div>
+	<div class="rxn">1😭</div>
+	<div class="rxn">1💀</div>
+	<div class="rxn">1🧡</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">Suha</div>
+	<div>Thank you bhai log✨
+Meri maa had to remind me aaj mera birthday hain🦸</div>
+	<div class="rxn">1🗿</div>
+	<div class="rxn">4❤️</div>
+	<div class="rxn">2💀</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">Kai</div>
+	<div></div>
+	<div class="rxn">1🧡</div>
+	<div class="rxn">3❤️</div>
+	<div class="rxn">1💛</div>
+	<div class="rxn">1💙</div>
+	<div class="rxn">1👍</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">Kai</div>
+	<div></div>
+	<div class="rxn">4❤️</div>
+	<div class="rxn">1👍</div>
+	<div class="rxn">1🧡</div>
+	<div class="rxn">1💙</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">Kai</div>
+	<div>https://www.instagram.com/p/CWVtptgqJT-/</div>
+	<div class="rxn">4❤️</div>
+	<div class="rxn">1💙</div>
+	<div class="rxn">1🧡</div>
+	<div class="rxn">1👍</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">Vaaruni Sharma</div>
+	<div></div>
+	<div class="rxn">6❤️</div>
+	<div class="rxn">1🧡</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">Alisha</div>
+	<div>Hoe depot only comes together to hate on treddys Hindi skills</div>
+	<div class="rxn">5❤️</div>
+	<div class="rxn">1✨</div>
+	<div class="rxn">1🧡</div>
+</div></li>
+</ol>
+<h3>most commonly used words</h3><canvas id="TOP50MOSTCOMMONLYUSEDWORDS" style="width:100%;max-width:600px"></canvas>
+
+<ol>
+	<li>🧡:2597</li>
+	<li>also:579</li>
+	<li>shit:442</li>
+	<li>why:415</li>
+	<li>too:414</li>
+	<li>‍:375</li>
+	<li>think:372</li>
+	<li>much:370</li>
+	<li>fucking:369</li>
+	<li>s:349</li>
+	<li>oh:347</li>
+	<li>bruh:347</li>
+	<li>want:344</li>
+	<li>us:337</li>
+	<li>same:333</li>
+	<li>cause:333</li>
+	<li>💙:309</li>
+	<li>dude:308</li>
+	<li>very:298</li>
+	<li>cuz:293</li>
+	<li>😂:291</li>
+	<li>fuck:285</li>
+	<li>that's:275</li>
+	<li>man:268</li>
+	<li>today:265</li>
+	<li>yall:263</li>
+	<li>dont:263</li>
+	<li>love:262</li>
+	<li>am:257</li>
+	<li>gonna:257</li>
+	<li>2:255</li>
+	<li>wtf:252</li>
+	<li>after:252</li>
+	<li>?:251</li>
+	<li>something:251</li>
+	<li>bhai:250</li>
+	<li>going:250</li>
+	<li>thing:248</li>
+	<li>here:243</li>
+	<li>because:239</li>
+	<li>well:236</li>
+	<li>back:235</li>
+	<li>god:233</li>
+	<li>never:233</li>
+	<li>wanna:232</li>
+	<li>okay:231</li>
+	<li>really:230</li>
+	<li>😭:229</li>
+	<li>still:224</li>
+	<li>im:220</li>
+	<li>hain:219</li>
+</ol></body><script>
+  const xValues0 = ["Alisha" ,"Tejaswi 🙂🔪" ,"Aryan D" ,"PH" ,"Vaaruni Sharma" ,"Suha" ,"Pankaj Mirchandani" ,"Kai" ,];
+  const yValues0 = [5449 ,7326 ,8705 ,8869 ,1287 ,1897 ,768 ,13056 ,];
+  const barColors0 = [
+    "#FF0000" ,
+"#00FF00" ,
+"#0000FF" ,
+"#FFFF00" ,
+"#FF00FF" ,
+"#00FFFF" ,
+"#000000" ,
+"#800000" ,
+
+  ];
+
+  new Chart('WHOSENTHOWMANYMESSEGES', {
+    type: 'pie',
+    data: {
+      labels: xValues0,
+      datasets: [{
+        backgroundColor: barColors0,
+        data: yValues0
+      }]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'Who sent how many messeges'
+      }
+    }
+  });
+</script><script>
+  const xValues1 = ["Content" ,"Like" ,"ReelShare" ,"PostShare" ,"PhotoShare" ,"VideoShare" ,"UrlShare" ,"AudioShare" ,"Empty" ,];
+  const yValues1 = [37724 ,4936 ,5099 ,5755 ,1324 ,181 ,355 ,59 ,232 ,];
+  const barColors1 = [
+    "#FF0000" ,
+"#00FF00" ,
+"#0000FF" ,
+"#FFFF00" ,
+"#FF00FF" ,
+"#00FFFF" ,
+"#000000" ,
+"#800000" ,
+"#008000" ,
+
+  ];
+
+  new Chart('WHATKINDOFMESSAGESWERESENT', {
+    type: 'pie',
+    data: {
+      labels: xValues1,
+      datasets: [{
+        backgroundColor: barColors1,
+        data: yValues1
+      }]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'What kind of messages were sent'
+      }
+    }
+  });
+</script><script>
+  const xValues2 = ["❤️" ,"🧡" ,"👍" ,"💙" ,"😂" ,"🤣" ,"💀" ,"😮" ,"😭" ,"😢" ,"🤨" ,"😳" ,"✨" ,"👌" ,"🤡" ,"💛" ,"🙂" ,"😶" ,"🐬" ,"🗿" ,];
+  const yValues2 = [23482 ,7889 ,5486 ,1374 ,768 ,108 ,105 ,104 ,98 ,69 ,44 ,36 ,35 ,32 ,26 ,18 ,16 ,16 ,15 ,12 ,];
+  const barColors2 = [
+    "#FF0000" ,
+"#00FF00" ,
+"#0000FF" ,
+"#FFFF00" ,
+"#FF00FF" ,
+"#00FFFF" ,
+"#000000" ,
+"#800000" ,
+"#008000" ,
+"#000080" ,
+"#808000" ,
+"#800080" ,
+"#008080" ,
+"#808080" ,
+"#C00000" ,
+"#00C000" ,
+"#0000C0" ,
+"#C0C000" ,
+"#C000C0" ,
+"#00C0C0" ,
+
+  ];
+
+  new Chart('MOSTPOPULARREACTIONS:', {
+    type: 'pie',
+    data: {
+      labels: xValues2,
+      datasets: [{
+        backgroundColor: barColors2,
+        data: yValues2
+      }]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'Most popular reactions:'
+      }
+    }
+  });
+</script><script>
+  const xValues3 = ["🧡" ,"also" ,"shit" ,"why" ,"too" ,"‍" ,"think" ,"much" ,"fucking" ,"s" ,"oh" ,];
+  const yValues3 = [2597 ,579 ,442 ,415 ,414 ,375 ,372 ,370 ,369 ,349 ,347 ,];
+  const barColors3 = [
+    "#FF0000" ,
+"#00FF00" ,
+"#0000FF" ,
+"#FFFF00" ,
+"#FF00FF" ,
+"#00FFFF" ,
+"#000000" ,
+"#800000" ,
+"#008000" ,
+"#000080" ,
+"#808000" ,
+
+  ];
+
+  new Chart('TOP50MOSTCOMMONLYUSEDWORDS', {
+    type: 'pie',
+    data: {
+      labels: xValues3,
+      datasets: [{
+        backgroundColor: barColors3,
+        data: yValues3
+      }]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'Top 50 most commonly used words'
+      }
+    }
+  });
+</script>
+</html>
