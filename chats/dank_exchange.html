@@ -1,0 +1,402 @@
+
+<html>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js'></script>
+    <style>
+        body{
+            font-family: 'Poppins';
+            font-size: 22px;
+            color: #edf982;
+            padding: 2%;
+            background-color: rgb(37, 37, 37);
+        }
+        .msgcont{
+            border-radius: 5px;
+            background-color: rgb(72, 72, 72);
+            padding: 2%;
+            width: max-content;
+            margin: 2%;
+        }
+        .usr{
+            color: rgb(121, 121, 248);
+        }
+        .rxn{
+            background-color: rgb(92, 94, 114);
+            width: max-content;
+            border-radius: 5px;
+            padding: 3%;
+            margin: 2%;
+        }
+        li{
+            color: aliceblue;
+        }
+        .txt{
+            color: aliceblue;
+        }
+    </style>
+    <body><h1>Chat with dank exchange wrapped</h1>
+<div class='txt'>by Aryan D</div>
+<h3>Who sent how many messeges</h3><canvas id="WHOSENTHOWMANYMESSEGES" style="width:100%;max-width:600px"></canvas>
+
+<ul>
+	<li>Ashis Wadhwani:824</li>
+	<li>PH:150</li>
+	<li>Divyansh Agrawal:432</li>
+	<li>Aryan D:491</li>
+	<li>Pankaj Mirchandani:713</li>
+	<li>Devaunsh Bhat:1165</li>
+	<li>チャイタニャ:386</li>
+	<li>Chaitanya Amit Khedekar • 𑀫𑀼𑀓𑁆𑀢𑀓𑁂𑀱𑀺𑀡𑁂•:15</li>
+</ul>
+<h3>What kind of messages were sent</h3><canvas id="WHATKINDOFMESSAGESWERESENT" style="width:100%;max-width:600px"></canvas>
+
+<ul>
+	<li>ReelShare:1995</li>
+	<li>Content:1676</li>
+	<li>PhotoShare:43</li>
+	<li>PostShare:421</li>
+	<li>VideoShare:4</li>
+	<li>UrlShare:14</li>
+	<li>Empty:26</li>
+</ul>
+<h3>Most popular reactions:</h3><canvas id="MOSTPOPULARREACTIONS:" style="width:100%;max-width:600px"></canvas>
+
+<h3>Top 20 most reacted messages:</h3>
+<ol>
+	<li><div class="msgcont">
+	<div class="usr">Divyansh Agrawal</div>
+	<div></div>
+	<div class="rxn">2😂</div>
+	<div class="rxn">1😮</div>
+	<div class="rxn">1🤣</div>
+	<div class="rxn">1🧡</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">PH</div>
+	<div></div>
+	<div class="rxn">4❤️</div>
+	<div class="rxn">1🖤</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">Aryan D</div>
+	<div></div>
+	<div class="rxn">1😢</div>
+	<div class="rxn">2😂</div>
+	<div class="rxn">1🧡</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">Divyansh Agrawal</div>
+	<div>Chaitanya is probably the person who can arrange that for you</div>
+	<div class="rxn">1🧡</div>
+	<div class="rxn">2👍</div>
+	<div class="rxn">1❤️</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">Aryan D</div>
+	<div>ill loose my virginity bro fuck this shit ra</div>
+	<div class="rxn">3💀</div>
+	<div class="rxn">1😂</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">Divyansh Agrawal</div>
+	<div></div>
+	<div class="rxn">3❤️</div>
+	<div class="rxn">1🧡</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">Divyansh Agrawal</div>
+	<div>What the fuck what</div>
+	<div class="rxn">1🗿</div>
+	<div class="rxn">1💀</div>
+	<div class="rxn">2🤣</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">チャイタニャ</div>
+	<div>As well as aur ek alag test hai jiska Monday ko exam hai aur uskeleya bhi shuru nahi kiya 😭</div>
+	<div class="rxn">1❤️</div>
+	<div class="rxn">1💀</div>
+	<div class="rxn">1😂</div>
+	<div class="rxn">1🖤</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">チャイタニャ</div>
+	<div>Bruhh photo kab leya 😭</div>
+	<div class="rxn">4😂</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">Aryan D</div>
+	<div>The new one is worse than the old one</div>
+	<div class="rxn">2💀</div>
+	<div class="rxn">1🤡</div>
+	<div class="rxn">1🤣</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">Aryan D</div>
+	<div>https://www.instagram.com/reel/Cr3gkVbJUdg/?id=3096086503234029408_53463853586</div>
+	<div class="rxn">1🧡</div>
+	<div class="rxn">2🤣</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">Divyansh Agrawal</div>
+	<div>And one bats grip randomly dissapeared</div>
+	<div class="rxn">2😂</div>
+	<div class="rxn">1💀</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">チャイタニャ</div>
+	<div>Defo jns ka bandha hoga 🥲</div>
+	<div class="rxn">1🧡</div>
+	<div class="rxn">1😂</div>
+	<div class="rxn">1🤣</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">PH</div>
+	<div>Uske saath saath kaun do dissapear hue the??? 💀</div>
+	<div class="rxn">2😂</div>
+	<div class="rxn">1🤣</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">Divyansh Agrawal</div>
+	<div></div>
+	<div class="rxn">1😂</div>
+	<div class="rxn">2💀</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">Devaunsh Bhat</div>
+	<div>You guys Holi was quite tame compared to ours.... Hamare main hostel main khel rahe the kisine pakke rang dal diye sab pe😭 aur har ek bande ko garden ke kichad main ghasita gaya tha 😂</div>
+	<div class="rxn">1❤️</div>
+	<div class="rxn">1💀</div>
+	<div class="rxn">1😂</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">Ashis Wadhwani</div>
+	<div></div>
+	<div class="rxn">2💀</div>
+	<div class="rxn">1🧡</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">チャイタニャ</div>
+	<div></div>
+	<div class="rxn">2😂</div>
+	<div class="rxn">1🤣</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">Divyansh Agrawal</div>
+	<div>Group chat Aisa banao ki 4 FBI agent bhi pura nahi padh paye</div>
+	<div class="rxn">2👍</div>
+	<div class="rxn">1🤣</div>
+</div></li>
+	<li><div class="msgcont">
+	<div class="usr">Divyansh Agrawal</div>
+	<div>It's his favourite movie</div>
+	<div class="rxn">2😂</div>
+	<div class="rxn">1🤣</div>
+</div></li>
+</ol>
+<h3>most commonly used words</h3><canvas id="TOP50MOSTCOMMONLYUSEDWORDS" style="width:100%;max-width:600px"></canvas>
+
+<ol>
+	<li>kya:45</li>
+	<li>🤣:36</li>
+	<li>bhi:36</li>
+	<li>💀:36</li>
+	<li>ashiswadhwani:34</li>
+	<li>rha:30</li>
+	<li>🧡:29</li>
+	<li>😂:24</li>
+	<li>??:22</li>
+	<li>aa:21</li>
+	<li>se:21</li>
+	<li>tu:18</li>
+	<li>lmao:18</li>
+	<li>🗿:17</li>
+	<li>guys:16</li>
+	<li>happy:16</li>
+	<li>kuch:15</li>
+	<li>ye:14</li>
+	<li>bhai:14</li>
+	<li>fuck:14</li>
+	<li>college:14</li>
+	<li>chal:14</li>
+	<li>kal:13</li>
+	<li>mumbai:13</li>
+	<li>ahh:13</li>
+	<li>exam:13</li>
+	<li>😭:13</li>
+	<li>aaj:12</li>
+	<li>कॉल:12</li>
+	<li>@maybe_div19:12</li>
+	<li>abhi:12</li>
+	<li>2:12</li>
+	<li>moment:12</li>
+	<li>pankaj:12</li>
+	<li>shit:11</li>
+	<li>@ashiswadhwani:11</li>
+	<li>@_pankaj_29:11</li>
+	<li>?:11</li>
+	<li>also:11</li>
+	<li>fucking:11</li>
+	<li>log:10</li>
+	<li>hu:10</li>
+	<li>@aka.dalal:10</li>
+	<li>us:10</li>
+	<li>kiya:10</li>
+	<li>hua:10</li>
+	<li>new:10</li>
+	<li>much:10</li>
+	<li>gya:10</li>
+	<li>bruhh:10</li>
+	<li>after:9</li>
+</ol></body><script>
+  const xValues0 = ["Ashis Wadhwani" ,"PH" ,"Divyansh Agrawal" ,"Aryan D" ,"Pankaj Mirchandani" ,"Devaunsh Bhat" ,"チャイタニャ" ,"Chaitanya Amit Khedekar • 𑀫𑀼𑀓𑁆𑀢𑀓𑁂𑀱𑀺𑀡𑁂•" ,];
+  const yValues0 = [824 ,150 ,432 ,491 ,713 ,1165 ,386 ,15 ,];
+  const barColors0 = [
+    "#FF0000" ,
+"#00FF00" ,
+"#0000FF" ,
+"#FFFF00" ,
+"#FF00FF" ,
+"#00FFFF" ,
+"#000000" ,
+"#800000" ,
+
+  ];
+
+  new Chart('WHOSENTHOWMANYMESSEGES', {
+    type: 'pie',
+    data: {
+      labels: xValues0,
+      datasets: [{
+        backgroundColor: barColors0,
+        data: yValues0
+      }]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'Who sent how many messeges'
+      }
+    }
+  });
+</script><script>
+  const xValues1 = ["ReelShare" ,"Content" ,"PhotoShare" ,"PostShare" ,"VideoShare" ,"UrlShare" ,"Empty" ,];
+  const yValues1 = [1995 ,1676 ,43 ,421 ,4 ,14 ,26 ,];
+  const barColors1 = [
+    "#FF0000" ,
+"#00FF00" ,
+"#0000FF" ,
+"#FFFF00" ,
+"#FF00FF" ,
+"#00FFFF" ,
+"#000000" ,
+
+  ];
+
+  new Chart('WHATKINDOFMESSAGESWERESENT', {
+    type: 'pie',
+    data: {
+      labels: xValues1,
+      datasets: [{
+        backgroundColor: barColors1,
+        data: yValues1
+      }]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'What kind of messages were sent'
+      }
+    }
+  });
+</script><script>
+  const xValues2 = ["🤣" ,"😂" ,"🧡" ,"❤️" ,"👍" ,"💀" ,"🗿" ,"😮" ,"🖤" ,"👍🏻" ,"❤" ,"💛" ,"😢" ,"😭" ,"❓" ,"😏" ,"💪" ,"😼" ,"🤝" ,"😔" ,"🤮" ,"🤲🏼" ,"👎" ,"🥖" ,"🤬" ,"💅" ,"🇷🇺" ,"☠" ,"🫡" ,"😎" ,"🙄" ,"🤔" ,"🤡" ,];
+  const yValues2 = [186 ,139 ,113 ,102 ,74 ,68 ,17 ,8 ,7 ,6 ,5 ,4 ,4 ,3 ,2 ,2 ,2 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,];
+  const barColors2 = [
+    "#FF0000" ,
+"#00FF00" ,
+"#0000FF" ,
+"#FFFF00" ,
+"#FF00FF" ,
+"#00FFFF" ,
+"#000000" ,
+"#800000" ,
+"#008000" ,
+"#000080" ,
+"#808000" ,
+"#800080" ,
+"#008080" ,
+"#808080" ,
+"#C00000" ,
+"#00C000" ,
+"#0000C0" ,
+"#C0C000" ,
+"#C000C0" ,
+"#00C0C0" ,
+"#C0C0C0" ,
+"#400000" ,
+"#004000" ,
+"#000040" ,
+"#404000" ,
+"#400040" ,
+"#004040" ,
+"#404040" ,
+"#200000" ,
+"#002000" ,
+"#000020" ,
+"#202000" ,
+"#200020" ,
+
+  ];
+
+  new Chart('MOSTPOPULARREACTIONS:', {
+    type: 'pie',
+    data: {
+      labels: xValues2,
+      datasets: [{
+        backgroundColor: barColors2,
+        data: yValues2
+      }]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'Most popular reactions:'
+      }
+    }
+  });
+</script><script>
+  const xValues3 = ["kya" ,"🤣" ,"bhi" ,"💀" ,"ashiswadhwani" ,"rha" ,"🧡" ,"😂" ,"??" ,"aa" ,"se" ,];
+  const yValues3 = [45 ,36 ,36 ,36 ,34 ,30 ,29 ,24 ,22 ,21 ,21 ,];
+  const barColors3 = [
+    "#FF0000" ,
+"#00FF00" ,
+"#0000FF" ,
+"#FFFF00" ,
+"#FF00FF" ,
+"#00FFFF" ,
+"#000000" ,
+"#800000" ,
+"#008000" ,
+"#000080" ,
+"#808000" ,
+
+  ];
+
+  new Chart('TOP50MOSTCOMMONLYUSEDWORDS', {
+    type: 'pie',
+    data: {
+      labels: xValues3,
+      datasets: [{
+        backgroundColor: barColors3,
+        data: yValues3
+      }]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'Top 50 most commonly used words'
+      }
+    }
+  });
+</script>
+</html>
